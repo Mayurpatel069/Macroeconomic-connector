@@ -1,0 +1,48 @@
+import type { MacroSeries } from '../types'
+
+export const INDIA_SERIES: MacroSeries[] = [
+  {
+    id: 'iip-general',
+    name: 'India Industrial Production',
+    fredId: 'IIP-GENERAL',
+    source: 'mospi',
+    category: 'output',
+    unit: 'Index',
+    frequency: 'Monthly',
+    description: 'Index of Industrial Production — General Index (Base: 2011-12). Measures growth of industrial sector output.',
+    color: '#f78166',
+  },
+  {
+    id: 'nas-gdp-growth',
+    name: 'India GDP Growth Rate',
+    fredId: 'NAS-GDP-GROWTH',
+    source: 'mospi',
+    category: 'output',
+    unit: '%',
+    frequency: 'Quarterly',
+    description: 'India GDP Growth Rate at Constant Prices (Base: 2022-23). Q1=Apr–Jun, Q2=Jul–Sep, Q3=Oct–Dec, Q4=Jan–Mar.',
+    color: '#3fb950',
+  },
+  {
+    id: 'cpi-india',
+    name: 'India CPI Inflation',
+    fredId: 'CPI-INDIA',
+    source: 'mospi',
+    category: 'prices',
+    unit: '%',
+    frequency: 'Monthly',
+    description: 'India Consumer Price Index — YoY Inflation % (All India Combined, Base: 2012). Headline retail inflation.',
+    color: '#ffa657',
+  },
+  {
+    id: 'plfs-ur',
+    name: 'India Unemployment Rate',
+    fredId: 'PLFS-UR',
+    source: 'mospi',
+    category: 'labor',
+    unit: '%',
+    frequency: 'Annual',
+    description: 'India Unemployment Rate — PLFS Annual Survey, 15+ years, PS+SS basis, All India combined.',
+    color: '#d2a8ff',
+  },
+]
